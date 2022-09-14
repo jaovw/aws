@@ -1,2 +1,2 @@
 # aws
-AWS Lambda and Serveless
+AWS Lambda and Serverless

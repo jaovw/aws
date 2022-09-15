@@ -12,6 +12,16 @@ provider:
   memorySize: 256
   timeout: 2
 # -------------
+# PERMITINDO A UTILIZACAO DE TODAS AS FUNCOES DISPONIVEIS NO CONTEXTO LAMBDA
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Action:
+            - 'lambda:*'
+          Resource:
+            - '*'
+# ------------
 functions:
   hello:
     handler: handler.hello

@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports.hello = async (event) => {
-  return 'Hello World'
+  return process.env['FIRST_NAME']
 };

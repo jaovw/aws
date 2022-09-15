@@ -22,6 +22,12 @@ provider:
           Resource:
             - '*'
 # ------------
+# VARIAVEIS DE AMBIENTE 
+# SENDO DEFINIDAS E JA CONFIGURADAS
+  environment:
+    variable1: value1
+    FIRST_NAME: 'Joao'
+# --------------
 functions:
   hello:
     handler: handler.hello
@@ -32,3 +38,14 @@ functions:
 # CONSEGUIMOS DELIMITAR OS RECURSOS QUE SERAO USADOS PARA A FUNCAO
 # DA MESMA FORMA QUE PODEMOS MANIPULAR AS CONFIGURACOES
 # MEMORIA, TEMPO DE EXECUCAO, DESCRICAO ...
+
+  hello-env-joao:
+    handler: handler.hello
+    description: Validando a variavel de ambiente
+
+  hello-env-victor:
+    handler: handler.hello
+    description: Validando outra varaivael de ambiente
+    environment:
+      FIRST_NAME: 'Victor'
+      # SENDO POSSIVEL SUBSTITUI-LA SE NECESSARIO

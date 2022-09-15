@@ -7,7 +7,11 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
-
+# COLOCANDO AS DEFINICOES DE RECURSOS A SEREM UTILIZADOS DIRETAMENTE NO "PROVIDER"
+# SERA APLICADA PARA TODAS AS FUNCOES, AO MENOS QUE SEJAM SUBSTITUIDAS NA DESCRICAO DA FUNCAO EM SI
+  memorySize: 256
+  timeout: 2
+# -------------
 functions:
   hello:
     handler: handler.hello

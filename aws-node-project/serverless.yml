@@ -13,3 +13,8 @@ functions:
     handler: handler.hello
     memorySize: 128
     timeout: 5
+    description: Apenas realizando testes com o framework
+
+# CONSEGUIMOS DELIMITAR OS RECURSOS QUE SERAO USADOS PARA A FUNCAO
+# DA MESMA FORMA QUE PODEMOS MANIPULAR AS CONFIGURACOES
+# MEMORIA, TEMPO DE EXECUCAO, DESCRICAO ...

@@ -25,6 +25,11 @@ In order to deploy the example, you need to run the following command:
 ```
 $ serverless deploy
 ```
+:zap: __De uma maneira mais rapida sem necessariamente refazer todo o "build"__
+
+```
+$ serverless deploy function -f "name"
+```
 
 After running deploy, you should see output similar to:
 

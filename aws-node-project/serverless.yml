@@ -28,6 +28,16 @@ provider:
     variable1: value1
     FIRST_NAME: 'Joao'
 # --------------
+# VPC
+# ACESSANDO VPC NO PAINEL 
+# SUBNETIDS - SUB REDES | SECURITYGROUPIDS - GRUPOS DE SEGURANCA
+  vpc:
+    securityGroupIds:
+      - sg-***
+    subnetIds:
+      - subnet-***
+      - subnet-***
+# --------------
 functions:
   hello:
     handler: handler.hello
